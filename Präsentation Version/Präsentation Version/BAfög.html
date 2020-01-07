@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BAföG</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="canvas.css">
+		<script type="text/javascript" src="canvas.js"></script>
+		<script type="text/javascript" src="transition.js"></script>
+		<script type="text/javascript" src="initParameter.js"></script>
+		<script type="text/javascript" src="firstPage.js"></script>
+		<script type="text/javascript" src="secondPage.js"></script>
+		<script type="text/javascript" src="dataset.js"></script>
+		<script type="text/javascript" src="jquery-3.0.0.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function()
+			{
+				show()
+			});
+
+			$(window).resize(resizeCanvas($("#myCanvas")))
+
+		</script>
+			<style>
+			body
+			{
+			background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="500" height="500" horizontalScrollPolicy="off" verticalScrollPolicy="off"></canvas>
+	</body>
+
+</html>
